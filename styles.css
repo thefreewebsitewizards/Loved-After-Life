@@ -252,27 +252,18 @@ p {
     border-radius: 2px;
 }
 
-/* Hero Section - Enhanced with Video Background */
+/* Hero Section - Enhanced with Image Background */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background: linear-gradient(135deg, var(--warm-off-white) 0%, #F0EDE8 50%, #E8E4DF 100%);
+    background: url('images/HOME.png') center center/cover no-repeat,
+                linear-gradient(135deg, var(--warm-off-white) 0%, #F0EDE8 50%, #E8E4DF 100%);
     overflow: hidden;
     /* Ensure proper mobile viewport handling */
     min-height: 100svh; /* Use small viewport height for better mobile support */
-}
-
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
 }
 
 .hero-overlay {
@@ -336,7 +327,7 @@ p {
 }
 
 .hero-title {
-    color: #2F2F2F;
+    color: #B33A3A;
     margin-bottom: 2rem;
     font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1.1;
